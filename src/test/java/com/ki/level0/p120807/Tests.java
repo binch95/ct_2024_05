@@ -10,8 +10,7 @@ public class Tests {
     @Test
     @DisplayName("2,3 => -1")
     void t1() {
-
-        assertThat(new Solution().solution(1, 5,4,5)).isEqualTo();
+        assertThat(new Solution().solution(999)).isEqualTo(201);
     }
 
 
