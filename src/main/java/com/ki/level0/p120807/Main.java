@@ -6,22 +6,17 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(new Solution().solution(999));
+        System.out.println(new Solution().solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
     }
 }
 
 
 class Solution {
-    public int solution(int hp) {
+    public double solution(int[] numbers) {
         int a = 0;
-        int s = 5;
-        int answer = 0;
-        for (int i = 1; i <= 3; i++) {
-            a = hp / s;
-            hp = hp - a * s;
-            s = s - 2;
-            answer += a;
+        for (int i = 0;i< numbers.length;i++){
+            a = a + numbers[i];
         }
-        return answer;
+        return (double) a / numbers.length;
     }
 }

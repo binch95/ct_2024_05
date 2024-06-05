@@ -8,9 +8,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class Tests {
 
     @Test
-    @DisplayName("2,3 => -1")
+    @DisplayName("배열의 평균값")
     void t1() {
-        assertThat(new Solution().solution(999)).isEqualTo(201);
+        assertThat(new Solution().solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})).isEqualTo(5.5);
     }
 
 
